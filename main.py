@@ -17,7 +17,11 @@ while True:
         print("Your password has been encoded and stored!\n")
 
     if men_opt == 2:
-        pass
+        decoded_list = ''
+        for digit in encoded:
+            new_digit = int(digit) - 3
+            decoded_list += str(new_digit)
+        print("The encoded password is", encoded,", and the original password is", decoded_list,".")
 
     if men_opt == 3:
         break
